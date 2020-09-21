@@ -47,6 +47,7 @@ body .login-icon {
   text-align: center;
   color: #f0dddd;
   font-size: 60%;
+  cursor: pointer;
 }
 
 body .login-icon img {
@@ -77,6 +78,7 @@ body .user-btns button {
   border: 2px solid white;
   font-weight: 900;
   outline: none;
+  cursor: pointer;
 }
 
 body .user-btns .sign-in-btn, body .user-btns .learn-more-btn:hover {
@@ -314,5 +316,135 @@ body .bg-imagery .box-seven {
     padding: 100px 50px;
     border-radius: 50px;
   }
+}
+
+.login-modal {
+  position: absolute;
+  background-image: linear-gradient(45deg, #926c5d, #5c255c);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  pointer-events: none;
+  display: none;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.login-modal * {
+  padding: 0ch;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+.login-modal .login-card {
+  -webkit-box-shadow: -2px 0px 4px #666262, 2px 2px 2px #665f5f;
+          box-shadow: -2px 0px 4px #666262, 2px 2px 2px #665f5f;
+  background-color: white;
+  max-height: 80vh;
+  min-height: 60vh;
+  border-radius: 6px;
+  padding: 12px;
+  max-width: 100vw;
+  width: 340px;
+}
+
+.login-modal .login-card .social-login-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+.login-modal .login-card .social-login-links img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.login-modal .login-card .social-login-links img:hover {
+  -webkit-box-shadow: 2px 2px 3px #03030c, -2px -2px 3px #03030c;
+          box-shadow: 2px 2px 3px #03030c, -2px -2px 3px #03030c;
+}
+
+.login-modal .login-card .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-modal .login-card .head p {
+  font-size: 140%;
+  padding: 0 5px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.login-modal .login-card .head p:hover {
+  -webkit-box-shadow: 2px 2px 3px #03030c, -2px -2px 3px #03030c;
+          box-shadow: 2px 2px 3px #03030c, -2px -2px 3px #03030c;
+}
+
+.login-modal .login-card .head h3 {
+  text-align: left;
+  padding-left: 12px;
+}
+
+.login-modal .login-card h4 {
+  text-align: center;
+}
+
+.login-modal .login-card input {
+  padding: 14px;
+  margin: 10px 5% 0;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  background-color: #bdbec0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-shadow: 1px 1px 2px #03030c;
+          box-shadow: 1px 1px 2px #03030c;
+}
+
+.login-modal .login-card .submit-btn {
+  background-color: #3b6bcc;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-modal .login-card h5 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 90%;
+}
+
+.login-modal .login-card h5 a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
