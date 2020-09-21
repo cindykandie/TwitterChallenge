@@ -16,7 +16,7 @@
         </p>
     </article>
     <div class="login-icon">
-        <img src="assets/user.svg" alt="" srcset=""> <br> <b>Login</b> 
+        <img src="assets/user.svg" alt="" srcset="" onclick="loginPopup()"> <br> <b>Login</b> 
     </div>
     <div class="user-btns">
         <button class="sign-in-btn"> 
@@ -38,6 +38,44 @@
         <div class="box-seven box"></div>
     </div>
 
+    <div class="login-modal">
+         <div class="login-card">
+             <div class="head"><h3>Login with</h3><p onclick="loginPopout()" class="exe" >&times;</p></div>
+             
+             <div class="social-login-links">
+                <img src="assets/github.svg" alt="">
+                <img src="assets/google-plus.svg" alt="">
+                <img src="assets/facebook.svg" alt="">
+            </div>
+            <h4>or</h4>
+        <form action="">
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="password" name="" id="" placeholder="Password"> <br>
+            <input class="submit-btn" type="submit" value="LOGIN">
+        </form>
+
+        <h5>Looking to <a href="">create an account</a> ? </h5>
+
+
+         </div>
+    </div>
+
         
 </body>
+   <script>
+       let popUp = document.querySelector('.login-modal')
+       let closeBtn = document.querySelector('.exe')
+       function loginPopup(){
+            popUp.style.display="flex"
+            popUp.style.transform="scale(1)"
+            popUp.style.pointerEvents="all"
+            
+       }
+       function loginPopout(){
+            popUp.style.display="none"
+            popUp.style.transform="scale(0)"
+            popUp.style.pointerEvents="none"
+
+       }
+   </script>
 </html>
